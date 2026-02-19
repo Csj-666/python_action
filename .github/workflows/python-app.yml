@@ -39,7 +39,7 @@ jobs:
     runs-on: windouw-latest
     steps:
       - name: Create Executable
-        uses: sayyid5416/pyinstaller@v1
+        uses: sayyid5416/pyinstaller@v1.8.0
         with:
           python_ver: '3.12'
           spec: 'main.py'
