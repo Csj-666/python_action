@@ -36,10 +36,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
   pyinstaller-build:
-    runs-on: windouw-latest
+    runs-on: windows-latest
     steps:
       - name: Create Executable
-        uses: sayyid5416/pyinstaller@v1.8.0
+        uses: sayyid5416/pyinstaller@v1
         with:
           python_ver: '3.12'
           spec: 'main.py'
